@@ -12,6 +12,11 @@ def tablicaZawierajaca10Piatek():
     print("Treść: utwórz tablicę zawierającą 10 piątek")
     print(tab)
 
+def tablicaZawierajacaLiczbyOd10Do50():
+    tab = np.arange(10,51,1)
+    print("Treść: utwórz tablicę zawierającą liczby od 10 do 50")
+    print(tab)
+
 #region menu
 def menu():
     wyjscie_z_programu = False
@@ -46,3 +51,4 @@ def menu():
 #endregion
 tablicaZawierajaca10Zer() 
 tablicaZawierajaca10Piatek()
+tablicaZawierajacaLiczbyOd10Do50()
