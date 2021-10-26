@@ -7,7 +7,10 @@ def tablicaZawierajaca10Zer():
     print("Treść: utwórz tablicę zawierającą 10 zer")
     print(tab)
     
-
+def tablicaZawierajaca10Piatek():
+    tab = np.full(10,5)
+    print("Treść: utwórz tablicę zawierającą 10 piątek")
+    print(tab)
 
 #region menu
 def menu():
@@ -42,3 +45,4 @@ def menu():
     quit()
 #endregion
 tablicaZawierajaca10Zer() 
+tablicaZawierajaca10Piatek()
