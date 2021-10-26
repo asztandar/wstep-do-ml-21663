@@ -1,3 +1,10 @@
+# region imports
+from numpy import np
+# endregion
+
+
+
+
 #region menu
 def menu():
     wyjscie_z_programu = False
