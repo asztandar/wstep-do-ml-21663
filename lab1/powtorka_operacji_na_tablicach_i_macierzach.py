@@ -1,8 +1,12 @@
 # region imports
-from numpy import np
+import numpy as np
 # endregion
 
-
+def tablicaZawierajaca10Zer():
+    tab = np.zeros(10)
+    print("Treść: utwórz tablicę zawierającą 10 zer")
+    print(tab)
+    
 
 
 #region menu
@@ -36,4 +40,5 @@ def menu():
         else: 
             print("wybor")
     quit()
-#endregion 
+#endregion
+tablicaZawierajaca10Zer() 
