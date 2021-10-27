@@ -100,6 +100,26 @@ def najwiekszaLiczbaMacierzy(matrix):
     print("najwieksza = ", end='')
     print(matrixMax)
 
+def macierzMxNTranspozycja():
+    tab = np.random.randint(0,100, size=(3,5))
+    print("macierz:")
+    print(tab)
+    tabTranspose = tab.transpose()
+    print("macierz transponowana:")
+    print(tabTranspose)
+
+def sumaDwochMacierzy():
+    matrixA = np.random.randint(100, size=(3, 3))
+    matrixB = np.random.randint(100, size=(3, 3))
+    print("Macierz A:")
+    print(matrixA)
+    print("Macierz B:")
+    print(matrixB)
+    matrixSum = np.add(matrixA,matrixB)
+    print("suma macierzy = ")
+    print(matrixSum)
+
+
 #region menu
 def menu():
     wyjscie_z_programu = False
@@ -141,4 +161,6 @@ def menu():
 #macierz10x10ZawOd001Do1ZKrokiem001()
 #tablica20Liniowo0A1Wlacznie()
 #tablicaLosoweOd1Do25Macierz5x5()
-macierz5x5LosoweOd0Do100()
+#macierz5x5LosoweOd0Do100()
+#macierzMxNTranspozycja()
+sumaDwochMacierzy()
