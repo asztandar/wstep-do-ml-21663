@@ -17,6 +17,11 @@ def tablicaZawierajacaLiczbyOd10Do50():
     print("Treść: utwórz tablicę zawierającą liczby od 10 do 50")
     print(tab)
 
+def macierzOWymiarach3x3ZawOd0Do8():
+    tab = np.arange(9).reshape(3,3)
+    print("Treść: utwórz macierz (tablica wielowymiarowa) o wymiarach 3x3 zawierającą liczby od 0 do 8")
+    print(tab)
+
 #region menu
 def menu():
     wyjscie_z_programu = False
@@ -49,6 +54,7 @@ def menu():
             print("wybor")
     quit()
 #endregion
-tablicaZawierajaca10Zer() 
-tablicaZawierajaca10Piatek()
-tablicaZawierajacaLiczbyOd10Do50()
+#tablicaZawierajaca10Zer() 
+#tablicaZawierajaca10Piatek()
+#tablicaZawierajacaLiczbyOd10Do50()
+macierzOWymiarach3x3ZawOd0Do8()
