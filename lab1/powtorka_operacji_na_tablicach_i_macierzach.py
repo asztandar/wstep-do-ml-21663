@@ -22,6 +22,15 @@ def macierzOWymiarach3x3ZawOd0Do8():
     print("Treść: utwórz macierz (tablica wielowymiarowa) o wymiarach 3x3 zawierającą liczby od 0 do 8")
     print(tab)
 
+
+def macierzJednostkowa3x3():
+    tab = np.eye(3)
+    print("Treść: utwórz macierz jednostkową o wymiarach 3x3")
+    print(tab)
+
+
+
+
 #region menu
 def menu():
     wyjscie_z_programu = False
@@ -57,4 +66,5 @@ def menu():
 #tablicaZawierajaca10Zer() 
 #tablicaZawierajaca10Piatek()
 #tablicaZawierajacaLiczbyOd10Do50()
-macierzOWymiarach3x3ZawOd0Do8()
+#macierzOWymiarach3x3ZawOd0Do8()
+macierzJednostkowa3x3()
