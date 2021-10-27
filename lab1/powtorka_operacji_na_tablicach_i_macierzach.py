@@ -28,6 +28,10 @@ def macierzJednostkowa3x3():
     print("Treść: utwórz macierz jednostkową o wymiarach 3x3")
     print(tab)
 
+def macierz5x5Dystrybucji():
+    tab = np.random.normal(size=(5,5))
+    print("Treść: utwórz macierz o wymiarach 5x5 zawierającą liczby z dystrybucji normalnej (Gaussa)")
+    print(tab)
 
 
 
@@ -67,4 +71,5 @@ def menu():
 #tablicaZawierajaca10Piatek()
 #tablicaZawierajacaLiczbyOd10Do50()
 #macierzOWymiarach3x3ZawOd0Do8()
-macierzJednostkowa3x3()
+#macierzJednostkowa3x3()
+macierz5x5Dystrybucji()
