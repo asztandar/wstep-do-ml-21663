@@ -76,6 +76,30 @@ def sumaKolumnyMacierzyDoTablicy(matrix):
     print("suma kolumn = ", end='')
     print(matrixKolumnSum)
 
+def macierz5x5LosoweOd0Do100():
+    tab = np.random.randint(0,100, size=(5,5))
+    print("task: utwórz macierz o wymiarach 5x5 zawierającą losowe liczby z przedziału (0, 100) oraz:")
+    print("macierz:")
+    print(tab)
+    medianaMacierzy(tab)
+    najmniejszaLiczbaMacierzy(tab)
+    najwiekszaLiczbaMacierzy(tab)
+
+def medianaMacierzy(matrix):
+    matrixMedian = np.median(matrix)
+    print("mediana = ", end='')
+    print(matrixMedian)
+
+def najmniejszaLiczbaMacierzy(matrix):
+    matrixMin = matrix.min()
+    print("najmniejsza = ", end='')
+    print(matrixMin)
+
+def najwiekszaLiczbaMacierzy(matrix):
+    matrixMax = matrix.max()
+    print("najwieksza = ", end='')
+    print(matrixMax)
+
 #region menu
 def menu():
     wyjscie_z_programu = False
@@ -116,4 +140,5 @@ def menu():
 #macierz5x5Dystrybucji()
 #macierz10x10ZawOd001Do1ZKrokiem001()
 #tablica20Liniowo0A1Wlacznie()
-tablicaLosoweOd1Do25Macierz5x5()
+#tablicaLosoweOd1Do25Macierz5x5()
+macierz5x5LosoweOd0Do100()
