@@ -119,6 +119,19 @@ def sumaDwochMacierzy():
     print("suma macierzy = ")
     print(matrixSum)
 
+def mnozenieDwochMacierzy():
+    matrixA = np.random.randint(4, size=(3, 4))
+    matrixB = np.random.randint(4, size=(4, 3))
+    print("Macierz A:")
+    print(matrixA)
+    print("Macierz B:")
+    print(matrixB)
+    matrixMultiplication = np.matmul(matrixA,matrixB)
+    print("wymnożona macierz matmul = ")
+    print(matrixMultiplication)
+    matrixMultiplication2 = np.dot(matrixA,matrixB)
+    print("wymnożona macierz dot = ")
+    print(matrixMultiplication2)
 
 #region menu
 def menu():
@@ -163,4 +176,5 @@ def menu():
 #tablicaLosoweOd1Do25Macierz5x5()
 #macierz5x5LosoweOd0Do100()
 #macierzMxNTranspozycja()
-sumaDwochMacierzy()
+#sumaDwochMacierzy()
+mnozenieDwochMacierzy()
