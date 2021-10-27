@@ -33,6 +33,16 @@ def macierz5x5Dystrybucji():
     print("Treść: utwórz macierz o wymiarach 5x5 zawierającą liczby z dystrybucji normalnej (Gaussa)")
     print(tab)
 
+def macierz10x10ZawOd001Do1ZKrokiem001():
+    tab = np.arange(0.01,1.01,0.01).reshape(10,10)
+    print("Treść: utwórz macierz o wymiarach 10x10 zawierającą liczby od 0,01 do 1 z krokiem 0,01")
+    print(tab)
+
+def tablica20Liniowo0A1Wlacznie():
+    tab = np.linspace(0.0, 1.0, num=20)
+    print("Treść: utwórz tablicę zawierającą 20 liniowo rozłożonych liczb między 0 a 1 (włącznie z 0 i 1)")
+    print(tab)
+
 
 
 #region menu
@@ -72,4 +82,6 @@ def menu():
 #tablicaZawierajacaLiczbyOd10Do50()
 #macierzOWymiarach3x3ZawOd0Do8()
 #macierzJednostkowa3x3()
-macierz5x5Dystrybucji()
+#macierz5x5Dystrybucji()
+#macierz10x10ZawOd001Do1ZKrokiem001()
+tablica20Liniowo0A1Wlacznie()
