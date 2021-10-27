@@ -43,7 +43,38 @@ def tablica20Liniowo0A1Wlacznie():
     print("Treść: utwórz tablicę zawierającą 20 liniowo rozłożonych liczb między 0 a 1 (włącznie z 0 i 1)")
     print(tab)
 
+def tablicaLosoweOd1Do25Macierz5x5():
+    tab = np.random.randint(1,25, size=25)
+    print("Treść: utwórz tablicę zawierającą losowe liczby z przedziału (1, 25), następnie zamień ją na macierz o wymiarach 5 x 5 z tymi samymi liczbami")
+    print("tablica:")
+    print(tab)
+    matrix = tab.reshape(5,5)
+    print("macierz:")
+    print(matrix)
+    sumaLiczbMacierzy(matrix)
+    sredniaLiczbMacierzy(matrix)
+    standardowaDewiacjaMacierzy(matrix)
+    sumaKolumnyMacierzyDoTablicy(matrix)
+    
+def sumaLiczbMacierzy(matrix):
+    matrixSum = matrix.sum()
+    print("suma liczb macierzy = ", end='')
+    print(matrixSum)
 
+def sredniaLiczbMacierzy(matrix):
+    matrixSr = matrix.mean()
+    print("średnia liczb macierzy = ", end='')
+    print(matrixSr)
+
+def standardowaDewiacjaMacierzy(matrix):
+    matrixStd = matrix.std()
+    print("standardowa dewiacja = ", end='')
+    print(matrixStd)
+
+def sumaKolumnyMacierzyDoTablicy(matrix):
+    matrixKolumnSum =  matrix.sum(axis=0)
+    print("suma kolumn = ", end='')
+    print(matrixKolumnSum)
 
 #region menu
 def menu():
@@ -84,4 +115,5 @@ def menu():
 #macierzJednostkowa3x3()
 #macierz5x5Dystrybucji()
 #macierz10x10ZawOd001Do1ZKrokiem001()
-tablica20Liniowo0A1Wlacznie()
+#tablica20Liniowo0A1Wlacznie()
+tablicaLosoweOd1Do25Macierz5x5()
