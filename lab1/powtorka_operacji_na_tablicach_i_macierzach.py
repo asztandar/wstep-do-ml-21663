@@ -133,6 +133,24 @@ def mnozenieDwochMacierzy():
     print("wymnożona macierz dot = ")
     print(matrixMultiplication2)
 
+
+def wybor(n):
+    if(n == '1'): tablicaZawierajaca10Zer()
+    elif(n=='2'): tablicaZawierajaca10Piatek()
+    elif(n=='3'): tablicaZawierajacaLiczbyOd10Do50()
+    elif(n=='4'): macierzOWymiarach3x3ZawOd0Do8()
+    elif(n=='5'): macierzJednostkowa3x3()
+    elif(n=='6'): macierz5x5Dystrybucji()
+    elif(n=='7'): macierz10x10ZawOd001Do1ZKrokiem001()
+    elif(n=='8'): tablica20Liniowo0A1Wlacznie()
+    elif(n=='9'): tablicaLosoweOd1Do25Macierz5x5()
+    elif(n=='10'): macierz5x5LosoweOd0Do100()
+    elif(n=='11'): macierzMxNTranspozycja()
+    elif(n=='12'): sumaDwochMacierzy()
+    elif(n=='13'): mnozenieDwochMacierzy()
+    else: print("wybrałeś niepoprawną opcję menu!")
+
+
 #region menu
 def menu():
     wyjscie_z_programu = False
@@ -150,11 +168,11 @@ def menu():
         print("8. utwórz tablicę zawierającą 20 liniowo rozłożonych liczb między 0 a 1 (włącznie z 0 i 1)")
         print("9. utwórz tablicę zawierającą losowe liczby z przedziału (1, 25), następnie zamień ją na macierz o wymiarach 5 x 5 z tymi samymi liczbami:")
         print("\t-oblicz sumę wszystkich liczb w ww. macierzy\n\t-oblicz średnią wszystkich liczb w ww. macierzy\n\t-oblicz standardową dewiację dla liczb w ww. macierzy\n\t-oblicz sumę każdej kolumny ww. macierzy i zapisz ją do tablicy")
-        print("11. utwórz macierz o wymiarach 5x5 zawierającą losowe liczby z przedziału (0, 100) oraz:")
+        print("10. utwórz macierz o wymiarach 5x5 zawierającą losowe liczby z przedziału (0, 100) oraz:")
         print("\t-oblicz medianę tych liczb\n\t-znajdź najmniejszą liczbę tej macierzy\n\t-znajdź największą liczbę tej macierzy")
-        print("12. utwórz macierz o wymiarach różnych od siebie i większych od 1, zawierającą losowe liczby z przedziału (0, 100) i dokonaj jej transpozycji")
-        print("13. utwórz dwie macierze o odpowiednich wymiarach, większych od 2x2 i dodaj je do siebie")
-        print("14. utwórz dwie macierze o odpowiednich wymiarach różnych od siebie i większych od 2, a następnie pomnóż je przez siebie za pomocą dwóch różnych funkcji ")
+        print("11. utwórz macierz o wymiarach różnych od siebie i większych od 1, zawierającą losowe liczby z przedziału (0, 100) i dokonaj jej transpozycji")
+        print("12. utwórz dwie macierze o odpowiednich wymiarach, większych od 2x2 i dodaj je do siebie")
+        print("13. utwórz dwie macierze o odpowiednich wymiarach różnych od siebie i większych od 2, a następnie pomnóż je przez siebie za pomocą dwóch różnych funkcji ")
         print("0. Wyjście")
         wybor_menu = input("Wprowadź pozycję z menu i zatwierdź enterem:")
         print("Twoj wybor to:" + wybor_menu)
@@ -162,7 +180,7 @@ def menu():
             print("Wyjście z programu")
             wyjscie_z_programu = True
         else: 
-            print("wybor")
+            wybor(wybor_menu)
     quit()
 #endregion
 #tablicaZawierajaca10Zer() 
@@ -177,4 +195,5 @@ def menu():
 #macierz5x5LosoweOd0Do100()
 #macierzMxNTranspozycja()
 #sumaDwochMacierzy()
-mnozenieDwochMacierzy()
+#mnozenieDwochMacierzy()
+menu()
