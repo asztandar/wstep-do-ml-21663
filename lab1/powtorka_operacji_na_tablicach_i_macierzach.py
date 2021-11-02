@@ -156,6 +156,7 @@ def menu():
     wyjscie_z_programu = False
     wybor_menu = -1
     while wyjscie_z_programu==False:
+        print("####################################################################")
         print('Lab. nr 1 - "Powtórka operacji na tablicach i macierzach"')
         print("Menu:")
         print("1. utwórz tablicę zawierającą 10 zer")
